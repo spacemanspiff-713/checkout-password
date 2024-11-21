@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "e85f1486764a78d596cf5ccdc95a24f0"
+name = "account-creation"
+handle = "account-creation-1"
+application_url = "https://checkout.milacollective.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "mila-dev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://checkout.milacollective.com/auth/callback",
+  "https://checkout.milacollective.com/auth/shopify/callback",
+  "https://checkout.milacollective.com/api/auth/callback"
+]
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
