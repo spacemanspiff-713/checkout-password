@@ -3,7 +3,7 @@
 client_id = "e85f1486764a78d596cf5ccdc95a24f0"
 name = "account-creation"
 handle = "account-creation-1"
-application_url = "https://officials-provides-douglas-progress.trycloudflare.com"
+application_url = "https://say-rp-foo-examinations.trycloudflare.com"
 embedded = true
 
 [build]
@@ -13,13 +13,13 @@ include_config_on_deploy = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = ""
+scopes = "read_customers, write_customers, read_orders, write_orders, read_checkouts"
 
 [auth]
 redirect_urls = [
-  "https://officials-provides-douglas-progress.trycloudflare.com/auth/callback",
-  "https://officials-provides-douglas-progress.trycloudflare.com/auth/shopify/callback",
-  "https://officials-provides-douglas-progress.trycloudflare.com/api/auth/callback"
+  "https://say-rp-foo-examinations.trycloudflare.com/auth/callback",
+  "https://say-rp-foo-examinations.trycloudflare.com/auth/shopify/callback",
+  "https://say-rp-foo-examinations.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
